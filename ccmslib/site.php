@@ -219,6 +219,7 @@ function build_js_sri($aws_flag, $path){
 	global $CFG;
 
 	/* If $path is not found in the config.php file then do nothing. */
+	/*
 	if(!isset($CFG["RES"][$path])) return;
 
 	$buff = ",'";
@@ -247,6 +248,7 @@ function build_js_sri($aws_flag, $path){
 		$qry->execute(array(':url' => $url, ':result' => $result));
 		echo $buff .= "sha256-" . $result . "','anonymous'";
 	}
+*/
 }
 
 
