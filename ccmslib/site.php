@@ -123,6 +123,7 @@ function build_css_link($aws_flag, $lng_flag, $path, $dir_flag){
 
 	$buff .= $url . '";';
 
+	/*
 	if($aws_flag){
 		$qry = $CFG["DBH"]->prepare("SELECT * FROM `sri` WHERE `url` = :url LIMIT 1;");
 		$qry->execute(array(':url' => $url));
@@ -138,6 +139,8 @@ function build_css_link($aws_flag, $lng_flag, $path, $dir_flag){
 		}
 		$buff .= 'l.crossOrigin="anonymous";';
 	}
+	*/
+	
 	echo $buff .= 'var h=document.getElementsByTagName("head")[0];h.parentNode.insertBefore(l,h);';
 }
 
