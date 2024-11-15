@@ -1,0 +1,203 @@
+{CCMS_DB_PRELOAD:all,esthetic-dentistry}<!DOCTYPE html>
+<html dir="{CCMS_LIB:_default.php;FUNC:ccms_lng_dir}" lang="{CCMS_LIB:_default.php;FUNC:ccms_lng}" prefix="og: http://ogp.me/ns#">
+	<head>
+		<!-- Repeated content and can be placed once in your header head template. -->
+		{CCMS_TPL:header-head.html}
+
+		<!-- Should be representative of the page in reference. -->
+		<title dir="{CCMS_LIB:_default.php;FUNC:ccms_lng_dir}">{CCMS_DB:all,company-name} / {CCMS_DB:all,services} / {CCMS_DB:all,esthetic-dentistry}</title>
+		<meta name="description" content="{CCMS_DB:esthetic-dentistry,description}" />
+
+		<!-- Google / Search Engine Tags -->
+		<meta itemprop="name" content="{CCMS_DB:all,company-name} / {CCMS_DB:all,services} / {CCMS_DB:all,esthetic-dentistry}" />
+		<meta itemprop="description" content="{CCMS_DB:esthetic-dentistry,description}" />
+
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}/{CCMS_LIB:_default.php;FUNC:ccms_lng}/services/esthetic-dentistry.html" />
+		<meta property="og:title" content="{CCMS_DB:all,company-name} / {CCMS_DB:all,services} / {CCMS_DB:all,esthetic-dentistry}" />
+		<meta property="og:description" content="{CCMS_DB:esthetic-dentistry,description}" />
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:title" content="{CCMS_DB:all,company-name} / {CCMS_DB:all,services} / {CCMS_DB:all,esthetic-dentistry}" />
+		<meta name="twitter:description" content="{CCMS_DB:esthetic-dentistry,description}" />
+
+		<script type="application/ld+json">
+			[{
+				"@context":"https://schema.org",
+				"@type":"WebSite",
+				"name":"{CCMS_DB:all,company-name}",
+				"url":"https://{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}/{CCMS_LIB:_default.php;FUNC:ccms_lng}/services/esthetic-dentistry.html",
+				"alternateName":"{CCMS_DB:all,company-name} / {CCMS_DB:all,services} / {CCMS_DB:all,esthetic-dentistry}"
+			},{
+				"@context":"https://schema.org",
+				"@type":"Dentist",
+				"name":"{CCMS_DB:all,company-name}",
+				"description":"{CCMS_DB:esthetic-dentistry,description}",
+				"url":"https://{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}/{CCMS_LIB:_default.php;FUNC:ccms_lng}/services/esthetic-dentistry.html",
+				"logo":{
+					"@type":"ImageObject",
+					"url":"{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/logo1.3.png"
+				},
+				"telephone":"(714) 835-4441",
+				"email":"info@{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}",
+				"priceRange":"Call for pricing options",
+				"address":{
+					"@type":"PostalAddress",
+					"addressLocality":"Tustin",
+					"addressRegion":"CA",
+					"postalCode":"92780",
+					"streetAddress":"17501 Irvine Blvd Ste 101 Tustin",
+					"addressCountry":"US"
+				},
+				"sameAs":[
+					/*"https://twitter.com/mywebsite",*/
+					"https://www.instagram.com/iconic.dds/?hl=en",
+					/*"https://plus.google.com/+mywebsite",*/
+					"https://www.facebook.com/tustindentistry/"
+					/*"https://www.pinterest.com/mywebsite/",*/
+					/*"https://www.youtube.com/user/mywebsite"*/
+				],
+				"geo":{
+					"@type":"GeoCoordinates",
+					"latitude":33.748438,
+					"longitude":-117.82662
+				},
+				"openingHours":["Mon-Fri: 9am - 5pm", "Sat-Sun: Closed"],
+				"image":"{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/business-card.png"
+			}]
+		</script>
+
+		<style nonce="{CCMS_LIB:site.php;FUNC:csp_nounce}">
+			{CCMS_TPL:/_css/header.html}
+
+			.webp .services_esthetic-dentistry_01{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_esthetic-dentistry_01.webp")}
+
+			.no-webp .services_esthetic-dentistry_01{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_esthetic-dentistry_01-min.jpg")}
+
+			.webp .services_esthetic-dentistry_02{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_esthetic-dentistry_02.webp")}
+
+			.no-webp .services_esthetic-dentistry_02{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_esthetic-dentistry_02-min.jpg")}
+
+			.services_esthetic-dentistry_02.lazy{background-image:none}
+
+			.webp .services_esthetic-dentistry_03{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_esthetic-dentistry_03.webp")}
+
+			.no-webp .services_esthetic-dentistry_03{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_esthetic-dentistry_03-min.jpg")}
+
+			.services_esthetic-dentistry_03.lazy{background-image:none}
+
+			.webp .services_esthetic-dentistry_04{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_esthetic-dentistry_04.webp")}
+
+			.no-webp .services_esthetic-dentistry_04{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_esthetic-dentistry_04-min.jpg")}
+
+			.services_esthetic-dentistry_04.lazy{background-image:none}
+		</style>
+		<script nonce="{CCMS_LIB:site.php;FUNC:csp_nounce}">
+		var navActiveArray = ["nl-services","nl-services_esthetic-dentistry","nl-lng","lng-{CCMS_LIB:_default.php;FUNC:ccms_lng}"];
+		var navActiveFooterArray = ["fl-services"];
+		</script>
+	</head>
+	<body>
+		<div id="loading_svg"></div>
+		<main class="cd-main-content">
+			<div class="parallax services_esthetic-dentistry_01"></div>
+			<div style="padding-bottom:15px">
+				<div class="bcGrid" dir="{CCMS_LIB:_default.php;FUNC:ccms_lng_dir}">
+					<h1 class="c1">Esthetic Dentistry</h1>
+					<i class="c2"></i>
+					<h4 class="c3" style="margin:8px 0 0">
+						<a dir="{CCMS_DB_DIR:all,homepage}" href="/{CCMS_LIB:_default.php;FUNC:ccms_lng}/">{CCMS_DB:all,homepage}</a> <span style="color:#888888">/</span> <a dir="{CCMS_DB_DIR:all,services}" href="/{CCMS_LIB:_default.php;FUNC:ccms_lng}/services/">{CCMS_DB:all,services}</a> <span style="color:#888888">/</span> <span style="color:var(--cl2)">Esthetic Dentistry</span>
+					</h4>
+				</div>
+			</div>
+			<div class="contentType1">
+				<div>
+					<p>More than merely cosmetic enhancement, esthetic (also spelled “aesthetic”) dentistry restores both form and function as it brings about positive changes to your teeth, gum and smile.  Although not a standalone specialty, it nevertheless represents a natural evolution of dentistry as the standard of care improves along with advancements in dental materials and technologies.</p>
+					<p>Dentistry has come a long way from its historic roots from many world civilizations—from the ancient Sumerians who left written description of dental decay, which they thought was caused by the “tooth worms”; to an Egyptian scribe thought to be the first dentist based on the inscription on his tomb; to the Greek philosopher Aristotle who, among many other things, had written about tooth eruption pattern, dental diseases and treatments; to the Chinese medical text from 700 AD that recorded the use of silver fillings. The forerunners of modern-day dentists and surgeons were the Medieval barbers of Western Europe—for a concise and interesting history of dentistry, check out the ADA website: <a href="https://www.ada.org/en/member-center/ada-library/dental-history" target="_blank">www.ada.org</a></p>
+				</div>
+			</div>
+			<div class="parallax services_esthetic-dentistry_02 lazy"></div>
+			<div class="contentType1">
+				<div>
+					<p>Modern dentistry is so much more than how it used to be, what's hard to shake is the dreaded reputation of a "drill and fill" profession where doctors cause people pain. Today, nothing can be further from the truth—a well-trained dentist with a <em style="text-decoration:underline">minimally invasive</em> mindset can do wonders. Click <em style="text-decoration:underline">here</em> to learn about our "no-drill" method of <em style="text-decoration:underline">caries</em> removal using our laser systems.</p>
+					<p>Already, at least more than half of what dentists offer involves esthetic and/or cosmetic enhancement of one way or another. And esthetic services have evolved from simply restoring damaged teeth to covering a wide scope of procedures from many specialties of dentistry. Below is a partial list of esthetic services offered at ICONIC Dentistry:</p>
+					<ol>
+						<li>Tooth Whitening</li>
+						<li>Non-invasive removal of "White Patches"</li>
+						<li>Composite (filling, inlay, onlay and overlay)</li>
+						<li>Porcelain (veneer, crown and bridge)</li>
+						<li>Flexible Dentures</li>
+						<li>Periodontal Esthetic</li>
+						<li>Procedures</li>
+						<li>Dental Implants</li>
+					</ol>
+					<p>In addition, the adoption of <a href="/{CCMS_LIB:_default.php;FUNC:ccms_lng}/services/ozone-therapy.html">ozone therapy</a> has allowed for more conservative management of compromised teeth--our doctors were able to save teeth with significant carious lesions from needing root canal procedures and even rescued teeth with severe <em style="text-decoration:underline">periodontal disease</em> from extractions.</p>
+				</div>
+			</div>
+			<div class="parallax services_esthetic-dentistry_03 lazy"></div>
+			<div class="contentType1">
+				<div>
+					<p>At ICONIC Dentistry our doctors believe that esthetic procedures should complement and not supersede the overall oral health needs of the patient—more foundational issues such as periodontal health must always be addressed first. This means that although any esthetic/cosmetic goal will be planned for from the very beginning of treatment, we still need to work our way up from the basics; and sometimes it may take a while before our doctors can get to the stage where they can actually work on the esthetic part. This is exemplified by the "dental treatment pyramid" below.</p>
+				</div>
+			</div>
+			<div class="parallax services_esthetic-dentistry_04 lazy"></div>
+			<div class="contentType1">
+				<div>
+					<p>When done appropriately, esthetic dentistry has the power to transform smiles and lives. Smile enhancement can have dramatic results on your overall appearance—even the smallest step can boost your confidence, self-esteem, and make you want to smile more.</p>
+					<p>To learn more about the variety of services we offer, or to schedule an appointment, contact us today at 714-835-4441. If you wish to ask a specific question, please submit through our Contact Us page located <a href="/{CCMS_LIB:_default.php;FUNC:ccms_lng}/contact-us.html">here</a>.</p>
+				</div>
+			</div>
+{CCMS_TPL:footer.html}
+		</main>
+{CCMS_TPL:header-body.html}
+<!-- {  CCMS_TPL:msg-popup.html} -->
+{CCMS_TPL:a2hs-box.html}
+		<script nonce="{CCMS_LIB:site.php;FUNC:csp_nounce}">
+			/*window.performance.mark("mark_beginning_javascript");*/
+{CCMS_TPL:footer-js.html}
+			function loadFirst(e,t,i,c){var a=document.createElement("script");a.async="true";a.setAttribute("nonce", "{CCMS_LIB:site.php;FUNC:csp_nounce}");if(i){a.integrity=i;a.crossOrigin=c;}a.readyState?a.onreadystatechange=function(){("loaded"==a.readyState||"complete"==a.readyState)&&(a.onreadystatechange=null,t())}:a.onload=function(){t()},a.src=e,document.body.appendChild(a)}
+
+			/*
+			Argument details for build_css_link2() and build_js_link() function calls:
+			arg1 = (1 = append AWS link), (empty = do not append AWS link)
+			arg2 = (1 = append language code to link), (empty = do not append language code to link)	In other words, send it through the parser first like a normal template.
+			arg3 = a variable found in the config file that represents a partial pathway to the style sheet, not including and details about AWS, language code, or language direction)
+			arg4 = (1 = append language direction to link), (empty = do not append language direction to link)
+
+			Argument details for build_js_sri() function calls:
+			arg1 = 1 = build sri code based on version stored on AWS.  empty = build sri code based on version stored on our own server.
+			arg2 = a variable found in the config file that represents a partial pathway to the style sheet. (Not including details about AWS, language code, or language direction)
+			*/
+
+			{CCMS_LIB:site.php;FUNC:build_css_link("1","","CSS-01","1")}
+
+			function loadJSResources(){
+				loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","MODERNIZER")}",function(){
+
+					loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY")}",function(){
+
+						loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-MOBILE-CUST")}",function(){
+
+							loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-VALIDATE")}",function(){
+
+								loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-VALIDATE-ADDITIONAL-METHODS")}",function(){
+
+									loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JS-01")}",function(){
+
+										/*window.performance.mark("mark_end_javascript");
+										console.log(window.performance.getEntriesByName("mark_beginning_javascript"));
+										console.log(window.performance.getEntriesByName("mark_end_javascript"));*/
+									}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JS-01")});
+								}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-VALIDATE-ADDITIONAL-METHODS")});
+							}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-VALIDATE")});
+						}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-MOBILE-CUST")});
+					}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY")});
+				}{CCMS_LIB:site.php;FUNC:build_js_sri("1","MODERNIZER")});
+			}
+
+			if(window.addEventListener){window.addEventListener("load",loadJSResources,false)}
+			else if(window.attachEvent){window.attachEvent("onload",loadJSResources)}
+			else{window.onload=loadJSResources}
+		</script>
+	</body>
+</html>

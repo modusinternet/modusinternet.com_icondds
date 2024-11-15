@@ -1,0 +1,157 @@
+{CCMS_DB_PRELOAD:all,languages}<!DOCTYPE html>
+<html dir="{CCMS_LIB:_default.php;FUNC:ccms_lng_dir}" lang="{CCMS_LIB:_default.php;FUNC:ccms_lng}" prefix="og: http://ogp.me/ns#">
+	<head>
+		<!-- Repeated content and can be placed once in your header head template. -->
+		{CCMS_TPL:header-head.html}
+
+		<!-- Should be representative of the page in reference. -->
+		<title dir="{CCMS_LIB:_default.php;FUNC:ccms_lng_dir}">{CCMS_DB:all,company-name} / {CCMS_DB:all,languages}</title>
+		<meta name="description" content="{CCMS_DB:languages,description}" />
+
+		<!-- Google / Search Engine Tags -->
+		<meta itemprop="name" content="{CCMS_DB:all,company-name} / {CCMS_DB:all,languages}" />
+		<meta itemprop="description" content="{CCMS_DB:languages,description}" />
+
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}/{CCMS_LIB:_default.php;FUNC:ccms_lng}/languages/" />
+		<meta property="og:title" content="{CCMS_DB:all,company-name} / {CCMS_DB:all,languages}" />
+		<meta property="og:description" content="{CCMS_DB:languages,description}" />
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:title" content="{CCMS_DB:all,company-name} / {CCMS_DB:all,languages}" />
+		<meta name="twitter:description" content="{CCMS_DB:languages,description}" />
+
+		<script type="application/ld+json">
+			[{
+				"@context":"https://schema.org",
+				"@type":"WebSite",
+				"name":"{CCMS_DB:all,company-name}",
+				"url":"https://{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}/{CCMS_LIB:_default.php;FUNC:ccms_lng}/languages/",
+				"alternateName":"{CCMS_DB:all,company-name} / {CCMS_DB:all,languages}"
+			},{
+				"@context":"https://schema.org",
+				"@type":"Dentist",
+				"name":"{CCMS_DB:all,company-name}",
+				"description":"{CCMS_DB:languages,description}",
+				"url":"https://{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}/{CCMS_LIB:_default.php;FUNC:ccms_lng}/languages/",
+				"logo":{
+					"@type":"ImageObject",
+					"url":"{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/logo1.3.png"
+				},
+				"telephone":"(714) 835-4441",
+				"email":"info@{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}",
+				"priceRange":"Call for pricing options",
+				"address":{
+					"@type":"PostalAddress",
+					"addressLocality":"Tustin",
+					"addressRegion":"CA",
+					"postalCode":"92780",
+					"streetAddress":"17501 Irvine Blvd Ste 101 Tustin",
+					"addressCountry":"US"
+				},
+				"sameAs":[
+					/*"https://twitter.com/mywebsite",*/
+					"https://www.instagram.com/iconic.dds/?hl=en",
+					/*"https://plus.google.com/+mywebsite",*/
+					"https://www.facebook.com/tustindentistry/"
+					/*"https://www.pinterest.com/mywebsite/",*/
+					/*"https://www.youtube.com/user/mywebsite"*/
+				],
+				"geo":{
+					"@type":"GeoCoordinates",
+					"latitude":33.748438,
+					"longitude":-117.82662
+				},
+				"openingHours":["Mon-Fri: 9am - 5pm", "Sat-Sun: Closed"],
+				"image":"{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/business-card.png"
+			}]
+		</script>
+
+		<style nonce="{CCMS_LIB:site.php;FUNC:csp_nounce}">
+			{CCMS_TPL:/_css/header.html}
+
+			.webp .languages_01{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/languages_01.webp")}
+
+			.no-webp .languages_01{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/languages_01-min.jpg")}
+		</style>
+		<script nonce="{CCMS_LIB:site.php;FUNC:csp_nounce}">
+			var navActiveArray = ["nl-lng","lng-{CCMS_LIB:_default.php;FUNC:ccms_lng}","nl-languages_index"];
+			var navActiveFooterArray = [];
+		</script>
+	</head>
+	<body>
+		<div id="loading_svg"></div>
+		<main class="cd-main-content">
+			<div class="parallax languages_01"></div>
+			<div style="padding-bottom:15px">
+				<div class="bcGrid" dir="{CCMS_LIB:_default.php;FUNC:ccms_lng_dir}">
+					<h1 class="c1">Languages</h1>
+					<i class="c2"></i>
+					<h4 class="c3" style="margin:8px 0 0">
+						<a dir="{CCMS_DB_DIR:all,homepage}" href="/{CCMS_LIB:_default.php;FUNC:ccms_lng}/">{CCMS_DB:all,homepage}</a> <span style="color:#888888">/</span> <span style="color:var(--cl2)">Languages</span>
+					</h4>
+				</div>
+			</div>
+			<div class="contentType1">
+				<div>
+					<p>Our local Orange County is home to several million residents, many of whom did not learn English as their first language. Although it’s now easier than ever to make use of technologies such as Google Translate to communicate, we still prefer to talk directly to someone who can speak our native tongue. At ICONIC Dentistry we are fortunate that members of our team can fluently speak Spanish, Mandarin Chinese, Vietnamese, and Farsi. An ongoing project is to translate our website into these and more languages so that more people can benefit from our content regarding dental and oral health.</p>
+					<ul>
+						{CCMS_LIB:site.php;FUNC:navLngList}
+						<li>More coming soon...</li>
+					</ul>
+				</div>
+			</div>
+{CCMS_TPL:footer.html}
+		</main>
+{CCMS_TPL:header-body.html}
+<!-- {  CCMS_TPL:msg-popup.html} -->
+{CCMS_TPL:a2hs-box.html}
+		<script nonce="{CCMS_LIB:site.php;FUNC:csp_nounce}">
+			/*window.performance.mark("mark_beginning_javascript");*/
+{CCMS_TPL:footer-js.html}
+			function loadFirst(e,t,i,c){var a=document.createElement("script");a.async="true";a.setAttribute("nonce", "{CCMS_LIB:site.php;FUNC:csp_nounce}");if(i){a.integrity=i;a.crossOrigin=c;}a.readyState?a.onreadystatechange=function(){("loaded"==a.readyState||"complete"==a.readyState)&&(a.onreadystatechange=null,t())}:a.onload=function(){t()},a.src=e,document.body.appendChild(a)}
+
+			/*
+			Argument details for build_css_link2() and build_js_link() function calls:
+			arg1 = (1 = append AWS link), (empty = do not append AWS link)
+			arg2 = (1 = append language code to link), (empty = do not append language code to link)	In other words, send it through the parser first like a normal template.
+			arg3 = a variable found in the config file that represents a partial pathway to the style sheet, not including and details about AWS, language code, or language direction)
+			arg4 = (1 = append language direction to link), (empty = do not append language direction to link)
+
+			Argument details for build_js_sri() function calls:
+			arg1 = 1 = build sri code based on version stored on AWS.  empty = build sri code based on version stored on our own server.
+			arg2 = a variable found in the config file that represents a partial pathway to the style sheet. (Not including details about AWS, language code, or language direction)
+			*/
+
+			{CCMS_LIB:site.php;FUNC:build_css_link("1","","CSS-01","1")}
+
+			function loadJSResources(){
+				loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","MODERNIZER")}",function(){
+
+					loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY")}",function(){
+
+						loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-MOBILE-CUST")}",function(){
+
+							loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-VALIDATE")}",function(){
+
+								loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-VALIDATE-ADDITIONAL-METHODS")}",function(){
+
+									loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JS-01")}",function(){
+
+										/*window.performance.mark("mark_end_javascript");
+										console.log(window.performance.getEntriesByName("mark_beginning_javascript"));
+										console.log(window.performance.getEntriesByName("mark_end_javascript"));*/
+									}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JS-01")});
+								}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-VALIDATE-ADDITIONAL-METHODS")});
+							}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-VALIDATE")});
+						}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-MOBILE-CUST")});
+					}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY")});
+				}{CCMS_LIB:site.php;FUNC:build_js_sri("1","MODERNIZER")});
+			}
+
+			if(window.addEventListener){window.addEventListener("load",loadJSResources,false)}
+			else if(window.attachEvent){window.attachEvent("onload",loadJSResources)}
+			else{window.onload=loadJSResources}
+		</script>
+	</body>
+</html>

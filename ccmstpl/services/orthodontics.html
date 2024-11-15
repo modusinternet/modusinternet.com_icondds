@@ -1,0 +1,200 @@
+{CCMS_DB_PRELOAD:all,orthodontics}<!DOCTYPE html>
+<html dir="{CCMS_LIB:_default.php;FUNC:ccms_lng_dir}" lang="{CCMS_LIB:_default.php;FUNC:ccms_lng}" prefix="og: http://ogp.me/ns#">
+	<head>
+		<!-- Repeated content and can be placed once in your header head template. -->
+		{CCMS_TPL:header-head.html}
+
+		<!-- Should be representative of the page in reference. -->
+		<title dir="{CCMS_LIB:_default.php;FUNC:ccms_lng_dir}">{CCMS_DB:all,company-name} / {CCMS_DB:all,services} / {CCMS_DB:all,orthodontics}</title>
+		<meta name="description" content="{CCMS_DB:orthodontics,description}" />
+
+		<!-- Google / Search Engine Tags -->
+		<meta itemprop="name" content="{CCMS_DB:all,company-name} / {CCMS_DB:all,services} / {CCMS_DB:all,orthodontics}" />
+		<meta itemprop="description" content="{CCMS_DB:orthodontics,description}" />
+
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}/{CCMS_LIB:_default.php;FUNC:ccms_lng}/services/orthodontics.html" />
+		<meta property="og:title" content="{CCMS_DB:all,company-name} / {CCMS_DB:all,services} / {CCMS_DB:all,orthodontics}" />
+		<meta property="og:description" content="{CCMS_DB:orthodontics,description}" />
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:title" content="{CCMS_DB:all,company-name} / {CCMS_DB:all,services} / {CCMS_DB:all,orthodontics}" />
+		<meta name="twitter:description" content="{CCMS_DB:orthodontics,description}" />
+
+		<script type="application/ld+json">
+			[{
+				"@context":"https://schema.org",
+				"@type":"WebSite",
+				"name":"{CCMS_DB:all,company-name}",
+				"url":"https://{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}/{CCMS_LIB:_default.php;FUNC:ccms_lng}/services/orthodontics.html",
+				"alternateName":"{CCMS_DB:all,company-name} / {CCMS_DB:all,services} / {CCMS_DB:all,orthodontics}"
+			},{
+				"@context":"https://schema.org",
+				"@type":"Dentist",
+				"name":"{CCMS_DB:all,company-name}",
+				"description":"{CCMS_DB:orthodontics,description}",
+				"url":"https://{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}/{CCMS_LIB:_default.php;FUNC:ccms_lng}/services/orthodontics.html",
+				"logo":{
+					"@type":"ImageObject",
+					"url":"{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/logo1.3.png"
+				},
+				"telephone":"(714) 835-4441",
+				"email":"info@{CCMS_LIB:_default.php;FUNC:ccms_cfgDomain}",
+				"priceRange":"Call for pricing options",
+				"address":{
+					"@type":"PostalAddress",
+					"addressLocality":"Tustin",
+					"addressRegion":"CA",
+					"postalCode":"92780",
+					"streetAddress":"17501 Irvine Blvd Ste 101 Tustin",
+					"addressCountry":"US"
+				},
+				"sameAs":[
+					/*"https://twitter.com/mywebsite",*/
+					"https://www.instagram.com/iconic.dds/?hl=en",
+					/*"https://plus.google.com/+mywebsite",*/
+					"https://www.facebook.com/tustindentistry/"
+					/*"https://www.pinterest.com/mywebsite/",*/
+					/*"https://www.youtube.com/user/mywebsite"*/
+				],
+				"geo":{
+					"@type":"GeoCoordinates",
+					"latitude":33.748438,
+					"longitude":-117.82662
+				},
+				"openingHours":["Mon-Fri: 9am - 5pm", "Sat-Sun: Closed"],
+				"image":"{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/business-card.png"
+			}]
+		</script>
+
+		<style nonce="{CCMS_LIB:site.php;FUNC:csp_nounce}">
+			{CCMS_TPL:/_css/header.html}
+
+			.webp .services_orthodontics_01{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_orthodontics_01.webp")}
+
+			.no-webp .services_orthodontics_01{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_orthodontics_01-min.jpg")}
+
+			.webp .services_orthodontics_02{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_orthodontics_02.webp")}
+
+			.no-webp .services_orthodontics_02{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_orthodontics_02-min.jpg")}
+
+			.services_orthodontics_02.lazy{background-image:none}
+
+			.webp .services_orthodontics_03{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_orthodontics_03.webp")}
+
+			.no-webp .services_orthodontics_03{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_orthodontics_03-min.jpg")}
+
+			.services_orthodontics_03.lazy{background-image:none}
+
+			.webp .services_orthodontics_04{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_orthodontics_04.webp")}
+
+			.no-webp .services_orthodontics_04{background-image:url("{CCMS_LIB:site.php;FUNC:load_resource("AWS")}/ccmstpl/_img/services_orthodontics_04-min.jpg")}
+
+			.services_orthodontics_04.lazy{background-image:none}
+		</style>
+		<script nonce="{CCMS_LIB:site.php;FUNC:csp_nounce}">
+			var navActiveArray = ["nl-services","nl-services_orthodontics","nl-lng","lng-{CCMS_LIB:_default.php;FUNC:ccms_lng}"];
+			var navActiveFooterArray = ["fl-services"];
+		</script>
+	</head>
+	<body>
+		<div id="loading_svg"></div>
+		<main class="cd-main-content">
+			<div class="parallax services_orthodontics_01"></div>
+			<div style="padding-bottom:15px">
+				<div class="bcGrid" dir="{CCMS_LIB:_default.php;FUNC:ccms_lng_dir}">
+					<h1 class="c1">Orthodontics</h1>
+					<i class="c2"></i>
+					<h4 class="c3" style="margin:8px 0 0">
+						<a dir="{CCMS_DB_DIR:all,homepage}" href="/{CCMS_LIB:_default.php;FUNC:ccms_lng}/">{CCMS_DB:all,homepage}</a> <span style="color:#888888">/</span> <a dir="{CCMS_DB_DIR:all,services}" href="/{CCMS_LIB:_default.php;FUNC:ccms_lng}/services/">{CCMS_DB:all,services}</a> <span style="color:#888888">/</span> <span style="color:var(--cl2)">Orthodontics</span>
+					</h4>
+				</div>
+			</div>
+			<div class="contentType1">
+				<div>
+					<p>As early as 400 BC, Hippocrates wrote about the very first known description of irregular teeth. Although not without debate<a href="#NL1"><sup>1</sup></a>, gold banded devices excavated from ancient Etruscan sites in central Italy dating around 700 BC were thought to be used for moving or supporting teeth. Interestingly, our cavemen ancestors did not have crooked teeth to the same extent as modern-day humans. Evidence suggests that as our diet and eating habits changed since industrialization so has there been a gradual shrinking of our jaw size.<a href="#NL1"><sup>2</sup></a></p>
+					<p>But rest assured, our desire to have straight teeth has fueled incredible advancements throughout history. From the 18<sup>th</sup> century "bandeau" to today's wide range of corrective treatment options, we have come a long way during this never-ending pursuit for the ideal smile.</p>
+					<p>In 1901, Dr. Edward Angle founded the American Society of Orthodontia (later renamed the American Association of Orthodontists), and with it, the formal establishment of the very first dental specialty-orthodontics, which means "straight teeth" in Greek. Aside from being the first orthodontist, Dr. Angle is also known for having developed the <em style="text-decoration:underline">first classification system for malocclusions</em>.</p>
+				</div>
+			</div>
+			<div class="parallax services_orthodontics_02 lazy"></div>
+			<div class="contentType1">
+				<div>
+					<p>Having braces used to mean metal bands that wrapped around every tooth and expensive gold wires that wound around each individual tooth. It was quite the ordeal and not every family can afford it. In the 1970s <em style="text-decoration:underline">resin bonding</em> techniques were adapted from <em style="text-decoration:underline">adhesive restorative dentistry</em> by orthodontists and allowed them to stick much smaller metal brackets to surfaces of teeth. At the same time gold wires were replaced by stainless steel wires due to it being stronger and more shapeable. Also in the 1970s lingual braces were developed, and this was the first time that esthetics was addressed by having brackets fixed to the tongue-facing surfaces of teeth. Even today they are an excellent choice!</p>
+					<p>Of course, no discussion of orthodontics would be complete without mentioning the clear aligners, popularized by name brands such as Invisalign and ClearCorrect. Custom fit to each patient’s teeth, these clear plastic orthodontic devices are made in a set to be worn in sequence and to gradually move and straighten teeth into the correct positions.</p>
+				</div>
+			</div>
+			<div class="parallax services_orthodontics_03 lazy"></div>
+			<div class="contentType1">
+				<div>
+					<p>Because clear aligners can be easily removed, they are less noticeable and more convenient compared to traditional fixed metal braces. For up to a few hours a day, they can be taken out when you eat and when you brush and floss, or just when you don't want to wear them. Not having metal also means less irritation of gums, lips and tongue, and hence making the treatment process more comfortable. Clear aligners are good enough to handle both simple and sometimes more complicated malocclusion cases, especially when used in conjunction with other methods. When done properly, clear aligners can even help speed up the treatment process.</p>
+					<p>Today, the treatment planning steps for clear aligners can be greatly enhanced through the "digital workflow". To start, an intraoral scanner can take thousands of digital photos, and then the software "stitches" these images together to form a virtual replica of the patient's mouth and teeth. This type of 3D surface scanning does not use ionizing radiation such as x-ray. At ICONIC Dentistry, we have one of the best-in-class intraoral 3D scanners available, the <em style="text-decoration:underline">3 Shape Trios</em>, oftentimes lauded as in a league of its own.</p>
+					<p>Afterwards, CAD/CAM technologies (computer-aided design, computer-aided manufacturing) using a powerful design software and 3D printing are leveraged to streamline and simplify the remaining steps with better accuracy and quality. In addition, we have better communication among the patient, the lab and doctors because visual representations of the treatment plan can be easily shared in real time across different devices in the virtual space without the limitations and delays of the traditional process.</p>
+				</div>
+			</div>
+			<div class="parallax services_orthodontics_04 lazy"></div>
+			<div class="contentType1">
+				<div>
+					<p>Although the "digital workflow" is poised to transform how we practice dentistry altogether, it can never replace a doctor’s training and experience. Having said that, doctors who utilize these digital tools have made quality orthodontic treatment more predictable and affordable to more people.</p>
+					<p>There are many options available to a potential orthodontic patient, young or old. At ICONIC Dentistry, we are at the vanguard of the "digital workflow" adoption and have chosen to offer clear aligners along with other appliance-based technologies as our mainstay therapy for most <em style="text-decoration:underline">Class I malocclusion</em>, which are the majority of patients. For more complex cases, such as severe overbite, underbite, or open bite, with or without skeletal misalignment, referrals will be made promptly to see a board-certified orthodontist that we work with.<a name="NL1"></a></p>
+					<p>If you are thinking about getting orthodontic treatment with clear braces, give us a call at 714-835-4441 to book your consultation appointment.</p>
+					<p>
+						<sup>1</sup> <a href="https://www.researchgate.net/publication/306071742_Orthodontics_in_antiquity_myth_or_reality" target="_blank">Orthodontics in antiquity: myth or reality.</a><br>
+						<sup>2</sup> <a href="https://stanfordpress.typepad.com/blog/2018/05/why-cavemen-needed-no-braces.html" target="_blank">Why Cavemen Needed No Braces.</a>
+					</p>
+				</div>
+			</div>
+{CCMS_TPL:footer.html}
+		</main>
+{CCMS_TPL:header-body.html}
+<!-- {  CCMS_TPL:msg-popup.html} -->
+{CCMS_TPL:a2hs-box.html}
+		<script nonce="{CCMS_LIB:site.php;FUNC:csp_nounce}">
+			/*window.performance.mark("mark_beginning_javascript");*/
+{CCMS_TPL:footer-js.html}
+			function loadFirst(e,t,i,c){var a=document.createElement("script");a.async="true";a.setAttribute("nonce", "{CCMS_LIB:site.php;FUNC:csp_nounce}");if(i){a.integrity=i;a.crossOrigin=c;}a.readyState?a.onreadystatechange=function(){("loaded"==a.readyState||"complete"==a.readyState)&&(a.onreadystatechange=null,t())}:a.onload=function(){t()},a.src=e,document.body.appendChild(a)}
+
+			/*
+			Argument details for build_css_link2() and build_js_link() function calls:
+			arg1 = (1 = append AWS link), (empty = do not append AWS link)
+			arg2 = (1 = append language code to link), (empty = do not append language code to link)	In other words, send it through the parser first like a normal template.
+			arg3 = a variable found in the config file that represents a partial pathway to the style sheet, not including and details about AWS, language code, or language direction)
+			arg4 = (1 = append language direction to link), (empty = do not append language direction to link)
+
+			Argument details for build_js_sri() function calls:
+			arg1 = 1 = build sri code based on version stored on AWS.  empty = build sri code based on version stored on our own server.
+			arg2 = a variable found in the config file that represents a partial pathway to the style sheet. (Not including details about AWS, language code, or language direction)
+			*/
+
+			{CCMS_LIB:site.php;FUNC:build_css_link("1","","CSS-01","1")}
+
+			function loadJSResources(){
+				loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","MODERNIZER")}",function(){
+
+					loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY")}",function(){
+
+						loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-MOBILE-CUST")}",function(){
+
+							loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-VALIDATE")}",function(){
+
+								loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-VALIDATE-ADDITIONAL-METHODS")}",function(){
+
+									loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JS-01")}",function(){
+
+										/*window.performance.mark("mark_end_javascript");
+										console.log(window.performance.getEntriesByName("mark_beginning_javascript"));
+										console.log(window.performance.getEntriesByName("mark_end_javascript"));*/
+									}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JS-01")});
+								}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-VALIDATE-ADDITIONAL-METHODS")});
+							}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-VALIDATE")});
+						}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-MOBILE-CUST")});
+					}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY")});
+				}{CCMS_LIB:site.php;FUNC:build_js_sri("1","MODERNIZER")});
+			}
+
+			if(window.addEventListener){window.addEventListener("load",loadJSResources,false)}
+			else if(window.attachEvent){window.attachEvent("onload",loadJSResources)}
+			else{window.onload=loadJSResources}
+		</script>
+	</body>
+</html>
