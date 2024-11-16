@@ -232,30 +232,30 @@
 			arg2 = a variable found in the config file that represents a partial pathway to the style sheet. (Not including details about AWS, language code, or language direction)
 			*/
 
-			{CCMS_LIB:site.php;FUNC:build_css_link("1","","CSS-01","1")}
+			{CCMS_LIB:site.php;FUNC:build_css_link("","","CSS-01","1")}
 
 			function loadJSResources(){
-				loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","MODERNIZER")}",function(){
+				loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("","","MODERNIZER")}",function(){
 
-					loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY")}",function(){
+					loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("","","JQUERY")}",function(){
 
-						loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-MOBILE-CUST")}",function(){
+						loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("","","JQUERY-MOBILE-CUST")}",function(){
 
-							loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-VALIDATE")}",function(){
+							loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("","","JQUERY-VALIDATE")}",function(){
 
-								loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JQUERY-VALIDATE-ADDITIONAL-METHODS")}",function(){
+								loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("","","JQUERY-VALIDATE-ADDITIONAL-METHODS")}",function(){
 
-									loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("1","","JS-01")}",function(){
+									loadFirst("{CCMS_LIB:site.php;FUNC:build_js_link("","1","JS-01")}",function(){
 
 										/*window.performance.mark("mark_end_javascript");
 										console.log(window.performance.getEntriesByName("mark_beginning_javascript"));
 										console.log(window.performance.getEntriesByName("mark_end_javascript"));*/
-									}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JS-01")});
-								}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-VALIDATE-ADDITIONAL-METHODS")});
-							}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-VALIDATE")});
-						}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY-MOBILE-CUST")});
-					}{CCMS_LIB:site.php;FUNC:build_js_sri("1","JQUERY")});
-				}{CCMS_LIB:site.php;FUNC:build_js_sri("1","MODERNIZER")});
+									}{CCMS_LIB:site.php;FUNC:build_js_sri("","JS-01")});
+								}{CCMS_LIB:site.php;FUNC:build_js_sri("","JQUERY-VALIDATE-ADDITIONAL-METHODS")});
+							}{CCMS_LIB:site.php;FUNC:build_js_sri("","JQUERY-VALIDATE")});
+						}{CCMS_LIB:site.php;FUNC:build_js_sri("","JQUERY-MOBILE-CUST")});
+					}{CCMS_LIB:site.php;FUNC:build_js_sri("","JQUERY")});
+				}{CCMS_LIB:site.php;FUNC:build_js_sri("","MODERNIZER")});
 			}
 
 			if(window.addEventListener){window.addEventListener("load",loadJSResources,false)}
